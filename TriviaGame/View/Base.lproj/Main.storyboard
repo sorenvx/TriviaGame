@@ -228,7 +228,7 @@
                                             <constraint firstAttribute="width" constant="50" id="xez-Fv-1ut"/>
                                         </constraints>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" image="folder.fill" catalog="system"/>
+                                        <state key="normal" image="doc.plaintext" catalog="system"/>
                                         <connections>
                                             <segue destination="24B-O2-Hbw" kind="presentation" id="iC4-dL-1c0"/>
                                         </connections>
@@ -510,7 +510,7 @@
     </scenes>
     <resources>
         <image name="background-1" width="480" height="852"/>
-        <image name="folder.fill" catalog="system" width="128" height="95"/>
+        <image name="doc.plaintext" catalog="system" width="115" height="128"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
     </resources>
 </document>
