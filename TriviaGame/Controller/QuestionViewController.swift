@@ -97,7 +97,7 @@ class QuestionViewController: UIViewController {
             bttn4.setTitle(allAnwsers[3], for: .normal)
             selectedAnswer = results[questionNumber].correctAnswer
             
-        } else if questionNumber > 19 {
+        } else if questionNumber > results.count - 1 {
             
             let alert = UIAlertController(title: winner(), message: "This is the end. Would you like to restart?", preferredStyle: .alert)
             let restartAction = UIAlertAction(title: "Restart", style: .default) { action in
