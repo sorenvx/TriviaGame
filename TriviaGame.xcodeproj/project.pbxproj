@@ -20,6 +20,7 @@
 		7B51063D24617C70009F166D /* InfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B51063C24617C70009F166D /* InfoTableViewController.swift */; };
 		7B51063F24617CA1009F166D /* InfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B51063E24617CA1009F166D /* InfoCell.swift */; };
 		7B5106452461A327009F166D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5106442461A327009F166D /* Extensions.swift */; };
+		7B75EEF12477C71A00F855E5 /* K.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B75EEF02477C71A00F855E5 /* K.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		7B51063C24617C70009F166D /* InfoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTableViewController.swift; sourceTree = "<group>"; };
 		7B51063E24617CA1009F166D /* InfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCell.swift; sourceTree = "<group>"; };
 		7B5106442461A327009F166D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		7B75EEF02477C71A00F855E5 /* K.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				7B02326224607EDF00B9CAB9 /* Assets.xcassets */,
 				7B02326424607EDF00B9CAB9 /* LaunchScreen.storyboard */,
 				7B02326724607EDF00B9CAB9 /* Info.plist */,
+				7B75EEF02477C71A00F855E5 /* K.swift */,
 			);
 			path = TriviaGame;
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 				7B51063D24617C70009F166D /* InfoTableViewController.swift in Sources */,
 				7B5106182461751A009F166D /* DataModel.xcdatamodeld in Sources */,
 				7B51063F24617CA1009F166D /* InfoCell.swift in Sources */,
+				7B75EEF12477C71A00F855E5 /* K.swift in Sources */,
 				7B5106452461A327009F166D /* Extensions.swift in Sources */,
 				7B02327124608C2100B9CAB9 /* QuestionViewController.swift in Sources */,
 				7B02325C24607EDE00B9CAB9 /* SceneDelegate.swift in Sources */,

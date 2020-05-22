@@ -23,13 +23,11 @@ struct DataManager {
         case failure(msg: MyErrors)
     }
     
-    
-    
     typealias ServiceCompletion = (_ results: ServiceResult) -> ()
     
     
     func getQuestions(completion: @escaping ServiceCompletion) -> Void {
-        let urlString = "https://opentdb.com/api.php?amount=20&type=multiple"
+        let urlString = K.url
         print(urlString)
         if let url = URL(string: urlString) {
             let session = URLSession(configuration: .default)
