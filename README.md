@@ -5,4 +5,4 @@ I've made this game in Xcode 11.4 and it work in iOS 13. The databse that I impl
 
 
 
-Once you enter the main screen the API fecth the data to the labels and it shows in real time. Sometimes the api doesn't work very well and all the symbols like "" appear weird, but there's nothing I can do about that, I just hope they improve the API in the near future.
+Once you enter the main screen the API fecth the data to the labels and it shows in real time.
