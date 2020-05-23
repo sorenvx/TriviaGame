@@ -10,7 +10,7 @@ import Foundation
 
 
 // MARK: - Welcome
-struct TriviaAPI: Codable {
+struct QuestionModel: Codable {
     let responseCode: Int?
     let results: [Result]
 

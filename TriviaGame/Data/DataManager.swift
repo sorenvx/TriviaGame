@@ -36,7 +36,7 @@ struct DataManager {
                     let decoder = JSONDecoder()
                     if let safeData = data {
                         do {
-                            let result = try decoder.decode(TriviaAPI.self, from: safeData)
+                            let result = try decoder.decode(QuestionModel.self, from: safeData)
                             DispatchQueue.main.async {
                                 let res: [Result] = result.results
                                 print(res)

@@ -13,5 +13,6 @@ class K {
     
     static var amount = "20"
     static var multipleCHoice = "multiple"
-    static var url = "https://opentdb.com/api.php?amount=\(amount)&type=\(multipleCHoice)&encode=base64"
+    static var encoder = "base64"
+    static var url = "https://opentdb.com/api.php?amount=\(amount)&type=\(multipleCHoice)&encode=\(encoder)"
 }
