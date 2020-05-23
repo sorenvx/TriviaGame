@@ -89,7 +89,6 @@ class QuestionViewController: UIViewController {
             allAnwsers = results[questionNumber].incorrectAnswers
             allAnwsers.append(results[questionNumber].correctAnswer)
             allAnwsers.shuffle()
-            print(allAnwsers)
             
             self.bttn1.setTitle(String(data: self.allAnwsers[0], encoding: .utf8), for: .normal)
             self.bttn2.setTitle(String(data: self.allAnwsers[1], encoding: .utf8), for: .normal)
