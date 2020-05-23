@@ -34,21 +34,21 @@ class QuestionViewController: UIViewController {
     var scorePlayerOne = 0
     var scorePlayerTwo = 0
     var selectedAnswer = ""
-    var allAnwsers: [String] = []
+    var allAnwsers: [Data] = []
     
     var results: [Result] = [] {
         didSet {
             DispatchQueue.main.async {
-                self.questionLabel.text = self.results[self.questionNumber].question
+                self.questionLabel.text = String(data: self.results[self.questionNumber].question, encoding: .utf8) 
                 self.allAnwsers = self.results[self.questionNumber].incorrectAnswers
                 self.allAnwsers.append(self.results[self.questionNumber].correctAnswer)
                 self.allAnwsers.shuffle()
                 
-                self.bttn1.setTitle(self.allAnwsers[0], for: .normal)
-                self.bttn2.setTitle(self.allAnwsers[1], for: .normal)
-                self.bttn3.setTitle(self.allAnwsers[2], for: .normal)
-                self.bttn4.setTitle(self.allAnwsers[3], for: .normal)
-                self.selectedAnswer = self.results[self.questionNumber].correctAnswer
+                self.bttn1.setTitle(String(data: self.allAnwsers[0], encoding: .utf8), for: .normal)
+                self.bttn2.setTitle(String(data: self.allAnwsers[1], encoding: .utf8), for: .normal)
+                self.bttn3.setTitle(String(data: self.allAnwsers[2], encoding: .utf8), for: .normal)
+                self.bttn4.setTitle(String(data: self.allAnwsers[3], encoding: .utf8), for: .normal)
+                self.selectedAnswer = String(data:self.results[self.questionNumber].correctAnswer, encoding: .utf8) ?? ""
             }
         }
         
@@ -85,17 +85,17 @@ class QuestionViewController: UIViewController {
     
     func updateQuestions() {
         if questionNumber <= results.count - 1 {
-            questionLabel.text = results[questionNumber].question
+            self.questionLabel.text = String(data: self.results[self.questionNumber].question, encoding: .utf8) 
             allAnwsers = results[questionNumber].incorrectAnswers
             allAnwsers.append(results[questionNumber].correctAnswer)
             allAnwsers.shuffle()
             print(allAnwsers)
             
-            bttn1.setTitle(allAnwsers[0], for: .normal)
-            bttn2.setTitle(allAnwsers[1], for: .normal)
-            bttn3.setTitle(allAnwsers[2], for: .normal)
-            bttn4.setTitle(allAnwsers[3], for: .normal)
-            selectedAnswer = results[questionNumber].correctAnswer
+            self.bttn1.setTitle(String(data: self.allAnwsers[0], encoding: .utf8), for: .normal)
+            self.bttn2.setTitle(String(data: self.allAnwsers[1], encoding: .utf8), for: .normal)
+            self.bttn3.setTitle(String(data: self.allAnwsers[2], encoding: .utf8), for: .normal)
+            self.bttn4.setTitle(String(data: self.allAnwsers[3], encoding: .utf8), for: .normal)
+            self.selectedAnswer = String(data:self.results[self.questionNumber].correctAnswer, encoding: .utf8) ?? ""
             
         } else if questionNumber > results.count - 1 {
             
